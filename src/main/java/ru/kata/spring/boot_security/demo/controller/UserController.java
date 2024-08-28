@@ -24,7 +24,7 @@ public class UserController {
     }
 
     @GetMapping
-    public String getDataForUserPage(Model model) {
+    public String getCurrentUser(Model model) {
 
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         User user = (User) auth.getPrincipal();
